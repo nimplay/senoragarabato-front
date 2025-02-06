@@ -1,9 +1,24 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
-const pageTitle = "Señora Garabato";
+import Greeting from "../components/Greeting";
+import "../styles/global.css";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
-</BaseLayout>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Señora Garabato</title>
+  </head>
+  <div class="cover">
+    <div class="cover-content">
+      <h1 style="margin: 0;" class="title-special">Señora Garabato</h1>
+      <h2 style="margin: 0;">Ilustración | Diseño de personajes | animación</h2>
+      <Greeting client:load messages={["Hola", "Bienvenido"]} />
+      <a class="button-cover" href="/home">Entrar</a>
+    </div>
+  </div>
+
+
+</html>

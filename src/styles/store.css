@@ -1,0 +1,17 @@
+.cart-secction {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.car-top-button{
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list {
+  display: flex;
+  align-items: center;
+}

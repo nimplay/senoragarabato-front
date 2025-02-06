@@ -1,0 +1,45 @@
+.section-container {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.section-main-data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-interlude {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.portfolio-container-specific{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 3rem;
+}
+
+.kofee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none
+}
+
+.portfolio-image {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none
+}
