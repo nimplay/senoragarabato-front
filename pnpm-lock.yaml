@@ -14,6 +14,9 @@ importers:
       '@astrojs/rss':
         specifier: ^4.0.11
         version: 4.0.11
+      '@fontsource/mansalva':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@fontsource/roboto':
         specifier: ^5.1.1
         version: 5.1.1
@@ -297,6 +300,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/mansalva@5.1.1':
+    resolution: {integrity: sha512-Fzezu1MDuU6HFAWC+ST1bXulS7nvbxJ+mEhpaDmXEoXn/N0RYQSIYFt9d2V9CerTgZSCcLfkJBLj5+EL1uxCmQ==}
 
   '@fontsource/roboto@5.1.1':
     resolution: {integrity: sha512-XwVVXtERDQIM7HPUIbyDe0FP4SRovpjF7zMI8M7pbqFp3ahLJsJTd18h+E6pkar6UbV3btbwkKjYARr5M+SQow==}
@@ -2063,6 +2069,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource/mansalva@5.1.1': {}
 
   '@fontsource/roboto@5.1.1': {}
 

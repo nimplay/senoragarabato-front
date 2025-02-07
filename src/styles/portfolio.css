@@ -1,0 +1,15 @@
+.portfolio-continer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-img {
+  width: 25rem;
+  height: 30rem;
+  object-fit: cover;
+
+}
