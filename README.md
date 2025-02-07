@@ -1,11 +1,10 @@
 # senoragarabato-front
 
 ```sh
-npm create astro@latest -- --template minimal
+npm create astro@latest
 ```
 
 [![Astro](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-
 [![Open in GitHub](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
 > 🧑‍🚀 **By Nimrod Acosta**
