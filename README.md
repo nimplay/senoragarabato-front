@@ -18,9 +18,40 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 ├── src/
+    └── components/
+│       └── Footer.astro
+        └── Greeting.jsx
+        └── Hamburger.astro
+        └── Header.astro
+        └── Navigation.astro
+        └── Social.astro
+    └── layouts/
+│       └── BaseLayout.astro
+        └── MarkdownPostLayout.astro
 │   └── pages/
-│       └── index.astro
+│       └── about.astro
+        └── blog.astro
+        └── home.astro
+        └── index.astro
+        └── portfolio.astro
+        └── tienda.astro
+        └── rss.js
+        └── tags/
+        └── posts/
+    └── scripts/
+│       └── menu.astro
+    └── styles/
+│       └── about.css
+│       └── global.css
+│       └── home.css
+│       └── nav.css
+│       └── portfolio.css
+│       └── store.css
+└── astro.config.mjs
 └── package.json
+└── pnpm-lock.yaml
+└── README.md
+└── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
