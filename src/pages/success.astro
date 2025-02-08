@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Store from "../components/Store"
+import ConfirmPayment from "../components/ConfirmPayment"
 import "../styles/store.css";
 const pageTitle = "";
 
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Store client:load/>
+  <ConfirmPayment client:load/>
 </BaseLayout>
