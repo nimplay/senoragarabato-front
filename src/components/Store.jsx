@@ -9,7 +9,7 @@ export default function Store() {
 
   useEffect(() => {
     console.log("Ejecutando fetch...");
-    fetch("https://api-garabato.onrender.com/products/")
+    fetch(`${PUBLIC_API_URL}/products/`)
       .then((response) => response.json())
       .then((data) => {
         console.log("Data recibida:", data);
@@ -99,7 +99,7 @@ export default function Store() {
     }));
 
     // Hacer la solicitud al backend para crear la orden de PayPal
-    fetch("https://api-garabato.onrender.com/paypal/create-order", {
+    fetch(`${PUBLIC_API_URL}/paypal/create-order`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -113,7 +113,7 @@ export default function Store() {
         if (data.id) {
           // Si la orden se creó correctamente, redirigir a la página de pago de PayPal
           const orderId = data.id;
-          window.location.href = `https://www.sandbox.paypal.com/checkoutnow?token=${orderId}`;
+          window.location.href = `${PUBLIC_PAYPAL_CHECKOUT_URL}?token=${orderId}`;
         } else {
           console.error("Error al crear la orden:", data.message);
         }
