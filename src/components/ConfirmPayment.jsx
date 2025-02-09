@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.PUBLIC_API_URL;
+const PUBLIC_API_URL = import.meta.env.PUBLIC_API_URL;
 import { useEffect } from "preact/hooks";
 
 export default function ConfirmPayment() {
@@ -8,7 +8,7 @@ export default function ConfirmPayment() {
     const orderId = params.get("token");
 
     if (orderId) {
-      fetch(`${API_URL}/paypal/capture-order/${orderId}`, {
+      fetch(`${PUBLIC_API_URL}/paypal/capture-order/${orderId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       })
