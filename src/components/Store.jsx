@@ -1,4 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
+const PUBLIC_API_URL = import.meta.env.PUBLIC_API_URL;
+const PUBLIC_PAYPAL_CHECKOUT_URL = import.meta.env.PUBLIC_PAYPAL_CHECKOUT_URL
 
 export default function Store() {
   const [products, setProducts] = useState([]);
