@@ -191,7 +191,7 @@ export default function Store() {
                     <div className="store-total">
                       <div className="store-quantity">
                         <p style={{ fontSize: "14px" }}>
-                          Seleccionar Subcategoría:
+                          Seleccione:
                         </p>
                         <select
                           onChange={(e) =>
