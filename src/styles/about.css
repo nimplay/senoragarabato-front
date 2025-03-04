@@ -157,3 +157,18 @@
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .section-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-main-data-container {
+    width: 95%;
+  }
+  .section-main-image-container {
+    width: 100%;
+  }
+}
