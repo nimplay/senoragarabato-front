@@ -12,6 +12,12 @@
   justify-content: center;
 }
 
+.title-special-home {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: 'Mansalva', cursive;
+}
+
 .section-interlude {
   width: 100%;
   display: flex;
@@ -55,6 +61,10 @@
 
   .portfolio-image {
     margin-bottom: 2rem;
+  }
+
+  .title-special-home {
+    font-size: 2rem;
   }
 }
 
