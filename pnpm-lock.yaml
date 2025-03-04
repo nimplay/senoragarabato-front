@@ -14,6 +14,9 @@ importers:
       '@astrojs/rss':
         specifier: ^4.0.11
         version: 4.0.11
+      '@fontsource-variable/quicksand':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@fontsource/mansalva':
         specifier: ^5.1.1
         version: 5.1.1
@@ -300,6 +303,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/quicksand@5.2.5':
+    resolution: {integrity: sha512-St1SleivUK/k8xQnW5NXHpeVw1tRh5qGpW77q0baNQDiGtYyYnoYNselE3n4a14rN8qkEPJFVhrx22tYEur3/A==}
 
   '@fontsource/mansalva@5.1.1':
     resolution: {integrity: sha512-Fzezu1MDuU6HFAWC+ST1bXulS7nvbxJ+mEhpaDmXEoXn/N0RYQSIYFt9d2V9CerTgZSCcLfkJBLj5+EL1uxCmQ==}
@@ -2069,6 +2075,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource-variable/quicksand@5.2.5': {}
 
   '@fontsource/mansalva@5.1.1': {}
 
