@@ -161,6 +161,12 @@ button:hover {
   .store-container-description {
     width: 100%;
     gap: 0;
-}
+  }
+
+  .link-list {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
