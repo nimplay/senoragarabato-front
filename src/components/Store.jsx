@@ -1,6 +1,6 @@
 import { useState, useEffect } from "preact/hooks";
 const PUBLIC_API_URL = import.meta.env.PUBLIC_API_URL;
-const PUBLIC_PAYPAL_CHECKOUT_URL = import.meta.env.PUBLIC_PAYPAL_CHECKOUT_URL
+const PUBLIC_PAYPAL_CHECKOUT_URL = import.meta.env.PUBLIC_PAYPAL_CHECKOUT_URL;
 
 export default function Store() {
   const [products, setProducts] = useState([]);
@@ -59,7 +59,6 @@ export default function Store() {
       }
     });
   };
-
 
   const handleSubcategoryChange = (productId, subcategoryIndex) => {
     const product = products.find((p) => p.id === productId);
@@ -125,7 +124,6 @@ export default function Store() {
       });
   };
 
-
   return (
     <>
       {/* Carrito icon */}
@@ -168,15 +166,21 @@ export default function Store() {
                     className="store-img"
                   />
                   <div className="store-container-description">
-                    <h1 style={{ fontSize: "30px", margin: 0 }}>
+                    <h1
+                      className="list-special"
+                      style={{ fontSize: "30px", margin: 0 }}
+                    >
                       {product.name}
                     </h1>
-                    <p style={{ fontSize: "14px" }}>
+                    <p className="normal-text" style={{ fontSize: "14px" }}>
                       {selectedSubcategory
                         ? selectedSubcategory.description
                         : product.subcategory[0].description}
                     </p>
-                    <p style={{ fontSize: "16px" }}>
+                    <p
+                      className="normal-text"
+                      style={{ fontSize: "16px", margin: 0 }}
+                    >
                       Precio desde:
                       <b>
                         <span>
@@ -190,10 +194,14 @@ export default function Store() {
 
                     <div className="store-total">
                       <div className="store-quantity">
-                        <p style={{ fontSize: "14px" }}>
+                        <p
+                          className="normal-text"
+                          style={{ fontSize: "14px", margin: 0 }}
+                        >
                           Seleccione:
                         </p>
                         <select
+                          className="store-quantity-select"
                           onChange={(e) =>
                             handleSubcategoryChange(
                               product.id,
@@ -209,12 +217,14 @@ export default function Store() {
                           ))}
                         </select>
                       </div>
-                      <button
-                        className="button-55 car-button"
-                        onClick={() => addToCart(product)}
-                      >
-                        Añadir al carrito
-                      </button>
+                      <div>
+                        <button
+                          className="button-cover"
+                          onClick={() => addToCart(product)}
+                        >
+                          Añadir al carrito
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -243,11 +253,15 @@ export default function Store() {
                 {cart.length > 0 ? (
                   cart.map((item, idx) => (
                     <div key={idx} className="cart-item">
-                       <img
-                    src={item.img}
-                    alt={item.subcategory}
-                    style={{ width: "50px", height: "auto", marginRight: "10px" }}
-                  />
+                      <img
+                        src={item.img}
+                        alt={item.subcategory}
+                        style={{
+                          width: "50px",
+                          height: "auto",
+                          marginRight: "10px",
+                        }}
+                      />
                       <p>
                         {item.name} - {item.subcategory}
                       </p>

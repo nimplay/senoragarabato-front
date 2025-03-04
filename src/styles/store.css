@@ -14,9 +14,7 @@
 .link-list {
   display: flex;
   align-items: center;
-
 }
-
 
 .store-container-list {
     display: flex;
@@ -55,7 +53,7 @@
     justify-content: flex-end;
     margin-top: 2rem;
     gap: 1rem;
-}
+  }
 
 .store-quantity {
     display: flex;
@@ -112,7 +110,6 @@
   font-size: 16px;
 }
 
-
 .modal-backdrop {
   position: absolute;
   top: 0;
@@ -146,4 +143,24 @@ button:hover {
   background-color: #ff4500;
 }
 
+.store-quantity-select {
+  max-width: 20rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .store-container-img {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .store-img {
+    max-width: 100%;
+  }
+  .store-container-description {
+    width: 100%;
+    gap: 0;
+}
+}
 

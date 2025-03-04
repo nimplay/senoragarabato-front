@@ -1,11 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Store from "../components/Store"
+import Store from "../components/Store";
 import "../styles/store.css";
+import '@fontsource-variable/quicksand';
+import '@fontsource-variable/merriweather-sans';
 const pageTitle = "";
-
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Store client:load/>
+  <div>
+    <Store client:load />
+  </div>
 </BaseLayout>

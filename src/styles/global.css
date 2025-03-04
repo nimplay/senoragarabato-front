@@ -114,6 +114,8 @@ h3 {
 .list-special {
   font-size: 2rem;
   font-family: 'Quicksand Variable', sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 .normal-text {
