@@ -116,6 +116,10 @@ h3 {
   font-family: 'Quicksand Variable', sans-serif;
 }
 
+.normal-text {
+  font-family: 'Merriweather Sans Variable', sans-serif;
+}
+
 @media screen and (max-width: 1200px) {
   .cover {
     background-position: bottom;

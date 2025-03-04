@@ -14,7 +14,9 @@
 .link-list {
   display: flex;
   align-items: center;
+
 }
+
 
 .store-container-list {
     display: flex;

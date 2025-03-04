@@ -1,4 +1,5 @@
 import { useState } from 'preact/hooks';
+import '@fontsource-variable/merriweather-sans';
 
 export default function Greeting({messages}) {
 
@@ -8,7 +9,7 @@ export default function Greeting({messages}) {
 
   return (
     <div>
-      <h3>¡{greeting}! ¡Gracias por tu visita!</h3>
+      <h3 style={{fontFamily:"'Merriweather Sans Variable', sans-serif"}}>¡{greeting}! ¡Gracias por tu visita!</h3>
     </div>
   );
 }

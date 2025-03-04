@@ -7,22 +7,22 @@
 
   .hamburger .line {
     display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
+    width: 35px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #000000;
   }
 
 .nav-links {
     width: 100%;
-    top: 5rem;
-    left: 48px;
+    top: 2rem;
+    left: 30px;
     display: none;
   }
 
   .nav-img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
 
@@ -31,9 +31,9 @@
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
     text-transform: uppercase;
+    color: black;
   }
 
   .nav-links a:hover,
