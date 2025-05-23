@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/home.css";
-import '@fontsource/mansalva';
-import '@fontsource-variable/quicksand';
-import '@fontsource-variable/merriweather-sans';
+import "@fontsource/mansalva";
+import "@fontsource-variable/quicksand";
+import "@fontsource-variable/merriweather-sans";
 const pageTitle = "";
 ---
 
@@ -24,7 +24,9 @@ const pageTitle = "";
         />
         Sigueme en instagram
       </a>
-      <h1 class="title-special-home" style="margin-bottom: 0;">Señora Garabato</h1>
+      <h1 class="title-special-home" style="margin-bottom: 0;">
+        Señora Garabato
+      </h1>
       <h2 style="margin-bottom: 2rem ;" class="list-special">
         Ilustración | Diseño de personajes | Animación
       </h2>
@@ -75,19 +77,22 @@ const pageTitle = "";
 
   <section class="section-container">
     <div class="portfolio-container-specific">
-      <a class="portfolio-image" href="/portfolio">
-        <img
-          src="https://senora-garabato-images.s3.us-east-2.amazonaws.com/images/PortfolioImg.JPG"
-          alt="mainImage"
-          style="width: 100%"
-        />
+      <div class="portfolio-image">
+        <a  href="/portfolio">
+          <img
+            src="https://senora-garabato-images.s3.us-east-2.amazonaws.com/images/PortfolioImg.JPG"
+            alt="mainImage"
+            style="width: 100%"
+          />
+        </a>
         <div class="portfolio-container-text-continer">
           <h1 class="title-special-home">Mi portafolio</h1>
-          <p class="list-special">
-            Ilustraciones | Retratos | Animaciones
-          </p>
+          <div>
+            <a href="/portfolio" class="list-special">Ilustraciones |</a>
+            <a href="/portraits" class="list-special">| Retratos</a>
+          </div>
         </div>
-      </a>
+      </div>
     </div>
   </section>
 </BaseLayout>
